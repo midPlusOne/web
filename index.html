@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="script.js"></script>
+    
+  </head>
+  <body>
+    <h1>Cart</h1>
+
+     <section>
+        <p>
+            <label for="txtApple">Apple: </label>
+            <input type="number" name="txtApple" id="txtApple" />
+            <input type="checkbox" name="chkApple" id="chkApple" onclick="calcApple()"/>
+          </p>
+          <p>
+            <label for="txtOrange">Orange: </label>
+            <input type="number" name="txtOrange" id="txtOrange" />
+            <input type="checkbox" name="chkOrange" id="chkOrange" onclick="calcOrange()"/>
+          </p>
+          <p>
+            <label for="txtBanana">Banana: </label>
+            <input type="number" name="txtBanana" id="txtBanana" />
+            <input type="checkbox" name="chkBanana" id="chkBanana" onclick="calcBanana()"/>
+          </p>
+    
+          <button onclick="calc()" >Calculate</button>
+     </section>
+
+  </body>
+</html>
