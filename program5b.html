@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reversing an integer</title>
+</head>
+
+<body>
+  <script>
+    var num = parseInt(prompt("Enter a positive integer: "));
+    var rem;
+    var rev = 0;
+    var n = num;
+    if (num <= 0 || !Number.isInteger(num)) {
+      alert("Enter a valid number!");
+    } else {
+      while (n !== 0) {
+        rem = n % 10;
+        rev = rev * 10 + rem;
+        n = Math.floor(n / 10);
+      }
+      alert("The reverse of given positive integer is " + rev);
+    }
+  </script>
+</body>
+
+</html>

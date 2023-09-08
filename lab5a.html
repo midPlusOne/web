@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Program 5</title>
+    <script>
+        function leftMostVowelPosition(str) {
+            str = str.toLowerCase();
+            const vowels = ['a', 'e', 'i', 'o', 'u'];
+
+            for (let i = 0; i < str.length; i++) {
+                if (vowels.includes(str[i])) {
+                    return i;
+                }
+            }
+            return -1; 
+        }
+
+        function demonstrate() {
+            const inputString = prompt("Enter a string:");
+            const vowelPosition = leftMostVowelPosition(inputString);
+            if (vowelPosition !== -1) {
+                alert(`The left-most vowel is at position ${vowelPosition + 1}.`);
+            } else {
+                alert("No vowels found in the input string.");
+            }
+
+        }
+    </script>
+</head>
+<body>
+    <h1>Left Most Vowel</h1>
+    <button onclick="demonstrate()">Click to Demonstrate</button>
+</body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script>
+        let toplayer = "layer3";
+        function mover(toTop) {
+            let oldTop = document.getElementById(toplayer).style;
+            let newTop = document.getElementById(toTop).style;
+
+            oldTop.zIndex = "0";
+            newTop.zIndex = "10";
+
+            toplayer = document.getElementById(toTop).id;
+            
+        }
+    </script>
+
+    <style type="text/css">
+        .layer1style{
+            border: solid thick black;
+            position: absolute;
+            width: 300px;
+            left: 200px;
+            top: 100px;
+            background-color: aqua;
+            padding: 10px;
+            z-index: 0;
+        }
+
+        .layer2style{
+            border: solid thick black;
+            position: absolute;
+            width: 300px;
+            left: 220px;
+            top: 120px;
+            background-color: rgb(43, 0, 255);
+            padding: 10px;
+            z-index: 0;
+        }
+        .layer3style{
+            border: solid thick black;
+            position: absolute;
+            width: 300px;
+            left: 240px;
+            top: 140px;
+            background-color: rgb(119, 255, 0);
+            padding: 10px;
+            z-index: 0;
+        }
+    </style>
+    <title>Document</title>
+</head>
+
+<body>
+    <div style="z-index: 10;" class="layer1style" id="layer1" onmouseover="mover('layer1')">
+        This is an exmple for the text to display in the div tag
+    </div>
+
+    <div style="z-index: 2;" class="layer2style" id="layer2" onmouseover="mover('layer2')">
+        This is an exmple for the text to display in the div tag
+    </div>
+
+    <div style="z-index: 0;" class="layer3style" id="layer3" onmouseover="mover('layer3')">
+        This is an exmple for the text to display in the div tag
+    </div>
+</body>
+
+</html>
