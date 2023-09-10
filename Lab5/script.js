@@ -33,7 +33,6 @@ function reverseNum(num) {
     {
         let r = parseInt(num % 10);
         rev = rev*10 + r;
-        console.log(r);
         num = parseInt(num / 10);
     }
 
