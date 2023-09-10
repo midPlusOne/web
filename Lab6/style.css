@@ -1,0 +1,24 @@
+.box{
+    border: solid thick black;
+    position: absolute;
+    width: 300px;
+    padding: 10px;
+    z-index: 0;
+}
+
+.layer1style{
+    top: 100px;
+    left: 200px;
+    background-color: yellowgreen;
+}
+
+.layer2style{
+    top: 120px;
+    left: 220px;
+    background-color: chocolate;
+}
+.layer3style{
+    top: 140px;
+    left: 240px;
+    background-color: darkcyan;
+}
