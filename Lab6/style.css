@@ -6,18 +6,18 @@
     z-index: 0;
 }
 
-.layer1style{
+#layer1{
     top: 100px;
     left: 200px;
     background-color: yellowgreen;
 }
 
-.layer2style{
+#layer2{
     top: 120px;
     left: 220px;
     background-color: chocolate;
 }
-.layer3style{
+#layer3{
     top: 140px;
     left: 240px;
     background-color: darkcyan;
